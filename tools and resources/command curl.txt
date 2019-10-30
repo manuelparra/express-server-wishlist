@@ -1,0 +1,3 @@
+curl -H "Content-Type: application/json" -d '["Cabimas", "Caracas", "Santo Domingo"]' localhost:3000/my
+
+curl -G localhost:3000/my
