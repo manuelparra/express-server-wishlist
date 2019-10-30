@@ -10,7 +10,7 @@ app.get("/ciudades", (req, res, next) => res.json(ciudades.filter((c) => c.toLow
 var misDestinos = [];
 app.get("/my", (req, res, next) => res.json(misDestinos));
 app.post("/my", (req, res, next) => {
-  console.log(res.body);
-  misDestinos = req.body;
+  console.log(req.body);
+  misDestinos.push(req.body.nuevo);
   res.json(misDestinos);
 });
